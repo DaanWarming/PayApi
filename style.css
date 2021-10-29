@@ -41,6 +41,14 @@ a {
     line-height: 18px;
 }
 
+li {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #36536B;
+}
+
 .scheduleButton {
     background-color: #BA4270;
     font-family: 'Public Sans', sans-serif;
@@ -95,6 +103,13 @@ a {
     z-index: -1;
 }
 
+#upperRightCircle2 {
+    position: absolute;
+    top: -34rem;
+    right: -18rem;
+    z-index: -1;
+}
+
 
 /*  Footer*/
 
@@ -117,7 +132,7 @@ footer {
 
 .footerLinks a:nth-child(1) {
     filter: brightness(0) invert(1);
-    margin-right: 6rem;
+    margin-right: 5rem;
     opacity: 1;
 }
 
@@ -131,7 +146,7 @@ footer {
 }
 
 .footerLinks a:nth-child(3) {
-    margin: 0 3rem;
+    margin: 0 4rem;
 }
 
 .footerLogos img:nth-child(2) {
@@ -340,4 +355,39 @@ input[type=email] {
 
 .homeReady h5 {
     margin-top: 0;
+}
+
+
+/*  Pricing Page */
+/*   */
+
+.checkmark {
+    list-style-type: '\2713';
+    padding-left: 1rem;
+}
+
+.notChecked {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.pricingTitle {
+    margin: 4rem 11% 2rem;
+}
+
+.pricingPlans {
+    margin: 0 11%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricePlan {
+    max-width: 27%;
+}
+
+.planTitle {
+    color: #BA4270;
+    letter-spacing: -0.246px;
+    font-size: 32px;
+    line-height: 40px;
 }
