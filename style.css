@@ -361,33 +361,74 @@ input[type=email] {
 /*  Pricing Page */
 /*   */
 
-.checkmark {
-    list-style-type: '\2713';
-    padding-left: 1rem;
-}
-
-.notChecked {
-    list-style-type: none;
-    padding-left: 1rem;
-}
-
 .pricingTitle {
-    margin: 4rem 11% 2rem;
+    margin: 7rem 11% 2rem;
 }
 
 .pricingPlans {
     margin: 0 11%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10rem;
 }
 
 .pricePlan {
     max-width: 27%;
 }
 
+
 .planTitle {
     color: #BA4270;
     letter-spacing: -0.246px;
     font-size: 32px;
     line-height: 40px;
+}
+
+.planDescription {
+    font-style: italic;
+}
+
+.planPrice {
+    font-size: 56px;
+    font-family: "DM Serif Display";
+    color: #36536B;
+    margin-top: 2.2rem;
+}
+
+.firstLine {
+    margin-bottom: 2rem;
+}
+
+.pricePlan ul {
+    margin-left: -1.7rem;
+}
+
+.checkmark {
+    list-style-type: '\2713';
+    padding-left: 1rem;
+    margin-top: 0.7rem;
+}
+
+.notChecked {
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-top: 0.7rem;
+}
+
+.secondLine {
+    margin: 2rem 0
+}
+
+.pricePlan a {
+    color: #36536B;
+    letter-spacing: -0.115;
+    border-radius: 24px;
+    border: 1px solid #36536B;
+    padding: 1rem 2rem;
+    position: absolute;
+}
+
+.pricePlan a:hover {
+    color: #FBFCFE;
+    background-color: #36536B;
 }
