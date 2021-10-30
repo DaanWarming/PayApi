@@ -193,7 +193,7 @@ footer {
     padding-left: 2rem;
 }
 
-input[type=email] {
+.formEnterEmail input[type=email] {
     font-family: 'Public Sans', sans-serif;
     font-weight: 700;
     font-size: 15px;
@@ -486,7 +486,7 @@ input[type=email] {
 
 .aboutImage img:nth-child(1) {
     width: 100%;
-    max-width: 100rem;
+    max-width: 120rem;
 }
 
 .aboutImage img:nth-child(2) {
@@ -521,4 +521,106 @@ input[type=email] {
     font-size: 56px;
     opacity: 1;
     margin: 2rem 0 2.5rem;
+}
+
+
+/*  Contact us page */
+/*  page h1 */
+.contactTitle {
+    margin: 5rem 11% 0;
+}
+
+.contactTitle h1 {
+    font-size: 56px;
+    max-width: 40rem;
+}
+
+.contactFormContainer {
+    margin: 4rem 11% 0;
+    display: flex;
+}
+
+.contactForm input[type=text], .contactForm input[type=email] {
+    border: none;
+    border-bottom: 1px solid #36536B;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -0.115px;
+    padding: 0 0 1rem 1rem;
+    color: #36536B;
+    margin-bottom: 1.5rem;
+    background-color: #EDF3F8;
+    width: 100%;
+}
+
+.checkBox {
+    width: 24px;
+    height: 24px;
+    filter: invert(16%);
+}
+
+.checkText {
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.115px;
+    color: #36536B;
+    display: inline-block;
+    width: 24rem;
+    margin-left: 1rem;
+}
+
+.formButton {
+    color: #36536B;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115;
+    border-radius: 24px;
+    border: 1px solid #36536B;
+    padding: 1rem 3rem;
+    background-color: #EDF3F8;
+    margin: 2rem 0 0;
+}
+
+.formButton:hover {
+    color: #FBFCFE;
+    background-color: #36536B;
+    cursor: pointer;
+}
+
+.contactLogosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: -6rem 0 0 5rem;
+}
+
+.contactLogosContainer p {
+    font-family: "DM Serif Display";
+    font-size: 24px;
+    color: #36536B;
+    opacity: 0.75;
+    max-width: 30rem;
+    margin-bottom: 2.5rem;
+}
+
+.formLogos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 34rem;
+    margin: 0rem;
+}
+
+.formLogos object:nth-child(1) {
+    margin-top: 0.5rem;
+}
+
+.formLogos object:nth-child(4) {
+    margin-top: 2.5rem;
+}
+
+.formLogos object:nth-child(5),  object:nth-child(6) {
+    margin-top: 2rem;
 }
