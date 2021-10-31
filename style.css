@@ -273,7 +273,7 @@ footer {
     margin: 13.5rem 0 0 12%;
 }
 
-.workLogos object:nth-child(1), object:nth-child(4) {
+.whoWorkLogos object:nth-child(1), object:nth-child(4) {
     margin-top: 0.5rem;
 }
 
@@ -364,7 +364,7 @@ footer {
 
 
 /*  Pricing Page */
-
+/*  Header */
 
 .pricingTitle {
     margin: 7rem 11% 2rem;
@@ -535,6 +535,7 @@ footer {
     max-width: 40rem;
 }
 
+/*  Contact form from top to bottom */
 .contactFormContainer {
     margin: 4rem 11% 0;
     display: flex;
@@ -589,6 +590,7 @@ footer {
     cursor: pointer;
 }
 
+/*  Contact page logos */
 .contactLogosContainer {
     display: flex;
     flex-direction: column;
@@ -621,6 +623,82 @@ footer {
     margin-top: 2.5rem;
 }
 
-.formLogos object:nth-child(5),  object:nth-child(6) {
+.formLogos object:nth-child(5),  .formLogos object:nth-child(6) {
     margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 1090px) {
+    /*  margins from al containers */
+    .navigation {
+        margin: 3.5rem 4% 0;
+    }
+
+    footer {
+        padding: 0 4%;
+    }
+
+    .homeHeader {
+        margin: 8rem 4% 0rem;
+    }
+
+    .homeWhoWork {
+        padding: 0 4%;
+    }
+
+    .homeEasyTo {
+        margin: 5rem 4%;
+    }
+
+    .homeSimpleUi {
+        margin: -5rem 4%;
+    }
+
+    .homeAdvantages {
+        margin: 8rem 4% 0;
+    }
+
+    .homeReady {
+        margin: 6rem 4% 2rem;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    /* nav circle */
+    #upperRightCircle {
+        top: -40rem;
+        margin-left: -30rem;
+        left: 50%;
+        right: 50%rem;
+        width: 949px;
+    }
+
+    /*  Header */
+    .homeHeader {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .homeHeader img {
+        max-height: 400px;
+        margin-left: 1rem;
+        margin-bottom: -3.5rem;
+    }
+
+    .headerText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 32rem;
+        text-align: center;
+    }
+
+    .headerText h1 {
+        font-size: 48px;
+    }
+
 }
