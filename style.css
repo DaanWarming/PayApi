@@ -108,16 +108,56 @@ hr {
     z-index: -1;
 }
 
-#upperRightCircle2 {
+#upperRightCircle0 {
+    position: absolute;
+    visibility: hidden;
+}
+
+#upperRightCircle2, upperRightCircle3 {
     position: absolute;
     top: -34rem;
     right: -18rem;
     z-index: -1;
 }
 
+#upperRightCircle3 {
+    position: absolute;
+    visibility: hidden;
+}
+
+.mobileTopNav {
+    visibility: hidden;
+}
+
+/*  Schedule a demo section  */
+.formEnterEmail {
+    position: relative;
+}
+
+.formEnterEmail input {
+    border-radius: 24px;
+    border: none;
+    background-color: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    width: 445px;
+    height: 46px;
+    padding-left: 2rem;
+}
+
+.formEnterEmail input[type=email] {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    opacity: 0.5;
+    color: #36536B;
+}
+
+.formEnterEmail button {
+    position: absolute;
+    margin-left: -10.6rem;
+}
 
 /*  Footer*/
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -151,7 +191,7 @@ footer {
 }
 
 .footerLinks a:nth-child(3) {
-    margin: 0 4rem;
+    margin: 0 3rem;
 }
 
 .footerLogos img:nth-child(2) {
@@ -177,33 +217,6 @@ footer {
 
 .headerText {
     max-width: 36rem;
-}
-
-.formEnterEmail {
-    position: relative;
-}
-
-.formEnterEmail input {
-    border-radius: 24px;
-    border: none;
-    background-color: #FBFCFE;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-    width: 445px;
-    height: 46px;
-    padding-left: 2rem;
-}
-
-.formEnterEmail input[type=email] {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    opacity: 0.5;
-    color: #36536B;
-}
-
-.formEnterEmail button {
-    position: absolute;
-    margin-left: -10.6rem;
 }
 
 .headerText p {
@@ -297,6 +310,8 @@ footer {
 .easyToText h3 {
     letter-spacing: -0.37px;
     margin-bottom: 0rem;
+    font-size: 48px;
+    margin-bottom: 2rem;
 }
 
 
@@ -315,7 +330,8 @@ footer {
 }
 
 .simpleUiText h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 48px;
 }
 
 .homeSimpleUi img:nth-child(2) {
@@ -342,7 +358,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 23rem;
+    max-width: 31%;
+}
+
+.advantagesColumn p:nth-child(2) {
+    opacity: 1;
+    color: #36536B;
+    font-weight: 700;
+    margin: 2rem 0 0.3rem 0;
+    font-size: 18px;
 }
 
 .advantagesColumn p {
@@ -360,6 +384,7 @@ footer {
 
 .homeReady h5 {
     margin-top: 0;
+    font-size: 48px;
 }
 
 
@@ -419,6 +444,7 @@ footer {
     list-style-type: none;
     padding-left: 1rem;
     margin-top: 0.7rem;
+    opacity: 0.6;
 }
 
 .secondLine {
@@ -628,7 +654,6 @@ footer {
 }
 
 
-
 @media screen and (max-width: 1090px) {
     /*  margins from al containers */
     .navigation {
@@ -639,6 +664,7 @@ footer {
         padding: 0 4%;
     }
 
+    /*  Home Page */
     .homeHeader {
         margin: 8rem 4% 0rem;
     }
@@ -662,6 +688,19 @@ footer {
     .homeReady {
         margin: 6rem 4% 2rem;
     }
+
+    /*  Pricing Page */
+    .pricingTitle {
+        margin: 7rem 4% 2rem;
+    }
+
+    .pricingPlans {
+        margin: 0 4%;
+    }
+
+    .pricePlan {
+        max-width: 31%;
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -673,7 +712,7 @@ footer {
         right: 50%rem;
         width: 949px;
     }
-
+    /*  Home Page */
     /*  Header */
     .homeHeader {
         flex-direction: column-reverse;
@@ -701,4 +740,310 @@ footer {
         font-size: 48px;
     }
 
+    /*  Who we work with */
+    .homeWhoWork {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        height: 718px;
+    }
+
+    .whoWorkLogos {
+        height: 30rem;
+        margin: 7rem 0 0 0;
+    }
+
+    .homeWhoWork img {
+        position: absolute;
+        top: -20rem;
+        left: -15rem;
+    }
+    
+    .whoWorkText {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .whoWorkText p {
+        margin-bottom: 2.5rem;
+    }
+
+    .homeWhoWork img {
+        top: -40rem;
+        margin-left: -30rem;
+        left: 50%;
+        right: 50%;
+        width: 949px;
+    }
+
+    .buttonAboutUs {
+        margin-left: -4rem;
+    }
+
+    /*  Easy to implement */
+    .homeEasyTo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 4%;
+    }
+    
+    .homeEasyTo img {
+        margin-left: 2.8rem;
+        max-width: 550px;
+    }
+    
+    .easyToText {
+        margin: -6rem 0 0 0;
+        text-align: center;
+        max-width: 36rem;
+    }
+    
+    /*  Simple UI & UX */
+    .homeSimpleUi {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: baseline;
+        margin: 0rem 4%;
+    }
+    
+    .simpleUiText {
+        max-width: 35rem;
+        margin-top: -5rem;
+        text-align: center;
+    }
+    
+    .simpleUiText h4 {
+        margin-bottom: 2rem;
+    }
+    
+    .homeSimpleUi img:nth-child(2) {
+        max-width: 503px;
+    }
+    
+    .homeSimpleUi img:nth-child(3) {
+        display: none;
+    }
+
+    /*  Home Advantages */
+    .homeAdvantages {
+        margin: 6rem 4% 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*  Ready to start? */
+
+    .homeReady {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 6rem 0 6rem;
+    }
+
+    .homeReady h5 {
+        margin-bottom: 3rem;
+    }
+
+    /*  Pricing Page */
+    .pricingTitle {
+        margin: 0rem 4% 2rem;
+        text-align: center;
+    }
+
+    .pricePlan {
+        text-align: center;
+        max-width: 32%;
+        margin-bottom: 4rem;
+    }
+
+    .pricePlan ul{
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .pricePlan a {
+        margin-left: -5rem;
+    }
+
+    .planTitle {
+        letter-spacing: -0.18px;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    
+    .planPrice {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .pricingPlans {
+        flex-direction: column;
+    }
+
+    .pricePlan {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    /*  Site Wide */
+    footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 350px;
+    }
+    
+    .footerLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footerLinks a:nth-child(1) {
+        filter: brightness(0) invert(1);
+        margin: 2rem 1rem 2rem 0;
+        margin-right: 1rem;
+        opacity: 1;
+    }
+
+    .footerLinks a:nth-child(3) {
+        margin: 2rem 0rem;
+    }
+    
+    #footerCircle {
+        top: 12rem;
+        margin-left: -30rem;
+        left: 50%;
+        right: 50%rem;
+        width: 949px;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+    /*  Site wide */
+    /*  Hide normal navigation */
+    #upperRightCircle0
+
+    .navigation {
+        visibility: hidden;
+    }
+
+    /*  Mobile navigation */
+    .mobileTopNav {
+        overflow: hidden;
+        background-color: #D2DBE3;
+        position: relative;
+        margin-top: -7rem;
+        visibility: visible;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    .mobileTopNav #myLinks {
+        display: none;
+    }
+    
+    .mobileTopNav a {
+        color: #36536B;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    .mobileTopNav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 55px;
+    }
+    
+    .mobileTopNav a:hover {
+        background-color: #ddd;
+        color: white;
+    }
+    
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    /*  Home Page */
+    /*  home header */
+    .headerText {
+        max-width: 20rem;
+    }
+
+    .headerText h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    /*  Schedule a Demo input */
+    .formEnterEmail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 80%;
+    }
+    
+    .formEnterEmail input {
+        width: 100%;
+    }
+    
+    .formEnterEmail button {
+        position: relative;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    /*  Who we work with */
+    .whoWorkLogos {
+        max-width: 20rem;
+    }
+
+    .whoWorkText h2 {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    /*  Easy to implement */
+    .homeEasyTo img {
+        max-width: 420px;
+    }
+
+    .easyToText h3 {
+        font-size: 36px;
+        margin: 4rem 0 1rem 0;
+    }
+
+    /*  Simple UI */
+    .homeSimpleUi img:nth-child(2) {
+        max-width: 400px;
+    }
+
+    .simpleUiText h4 {
+        font-size: 36px;
+        margin: 4rem 0 2rem 0;
+    }
+
+    /*  Home Advantages */
+    .homeAdvantages {
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .advantagesColumn {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
 }
