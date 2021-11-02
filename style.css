@@ -184,6 +184,7 @@ footer {
 .footerLinks a {
     color: #FBFCFE;
     opacity: 0.7;
+    z-index: 2;
 }
 
 .footerLinks a:hover {
@@ -210,7 +211,7 @@ footer {
 /*  Home Header */
 
 .homeHeader {
-    margin: 8rem 11% 0rem;
+    margin: 2rem 11% 0rem;
     display: flex;
     justify-content: space-between;
 }
@@ -289,7 +290,6 @@ footer {
 .whoWorkLogos object:nth-child(1), object:nth-child(4) {
     margin-top: 0.5rem;
 }
-
 
 /*  Easy to implement */
 
@@ -392,7 +392,7 @@ footer {
 /*  Header */
 
 .pricingTitle {
-    margin: 7rem 11% 2rem;
+    margin: 0rem 11% 2rem;
 }
 
 .pricingPlans {
@@ -466,13 +466,12 @@ footer {
 }
 
 
-/*  About us page */
+/*  About page */
 /*  page h1 */
 
 .aboutTitle {
-    margin: 5rem 17% 4rem;
+    margin: 0rem 17% 4rem;
     max-width: 41rem;
-
 }
 
 .aboutTitle h1 {
@@ -515,12 +514,18 @@ footer {
     max-width: 120rem;
 }
 
-.aboutImage img:nth-child(2) {
+#aboutImage2 {
+    visibility: hidden;
+    position: absolute;
+}
+
+.aboutImage img:nth-child(3) {
     position: absolute;
     top: -7rem;
     left: -32rem;
     z-index: -1;
 }
+
 
 
 /*  Statistics */
@@ -553,7 +558,7 @@ footer {
 /*  Contact us page */
 /*  page h1 */
 .contactTitle {
-    margin: 5rem 11% 0;
+    margin: 0rem 11% 0;
 }
 
 .contactTitle h1 {
@@ -582,9 +587,11 @@ footer {
 }
 
 .checkBox {
+    display: flex;
     width: 24px;
     height: 24px;
     filter: invert(16%);
+    position: absolute;
 }
 
 .checkText {
@@ -594,8 +601,9 @@ footer {
     letter-spacing: -0.115px;
     color: #36536B;
     display: inline-block;
-    width: 24rem;
-    margin-left: 1rem;
+    max-width: 28rem;
+    margin-left: 3rem;
+    margin-top: 0rem;
 }
 
 .formButton {
@@ -654,6 +662,13 @@ footer {
 }
 
 
+
+@media screen and (max-width: 1290px) {
+    .whoWorkLogos {
+        width: 22rem;
+    }
+}
+
 @media screen and (max-width: 1090px) {
     /*  margins from al containers */
     .navigation {
@@ -700,6 +715,32 @@ footer {
 
     .pricePlan {
         max-width: 31%;
+    }
+
+    /*  About Page */
+    .aboutTitle {
+        margin: 5rem 4% 4rem;
+    }
+
+    .aboutTextContainer {
+        margin: 0 4%;
+    }
+
+    .aboutStatsContainer {
+        margin: 0 4% 3rem;
+    }
+
+    #aboutCircle {
+        display: none;
+    }
+
+    /*  Contact Page */
+    .contactTitle {
+        margin: 5rem 4% 0;
+    }
+
+    .contactFormContainer {
+        margin: 4rem 4% 0;
     }
 }
 
@@ -752,6 +793,7 @@ footer {
     .whoWorkLogos {
         height: 30rem;
         margin: 7rem 0 0 0;
+        width: 36rem;
     }
 
     .homeWhoWork img {
@@ -877,16 +919,171 @@ footer {
     .planPrice {
         font-size: 48px;
     }
+
+    /*  About Page */
+    .aboutTitle h1 {
+        font-size: 48px;
+    }
+
+    .aboutText p {
+        margin-left: 1rem;
+    }
+
+    /*  Contact Page */
+    .contactTitle {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 0 0;
+    }
+
+    .contactTitle h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .contactFormContainer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 2rem 0 0 0;
+        max-width: 100%;
+    }
+
+    .contactForm {
+        width: 50%;
+    }
+
+    .checkText {
+        text-align: left;
+    }
+    
+    .contactForm button {
+        margin-left: -17rem;
+    }
+
+    .contactLogosContainer {
+        margin: 4rem 0 0 0;
+    }
 }
 
 @media screen and (max-width: 720px) {
+    /*  Pricing Page */
+    .pricingTitle h1 {
+        font-size: 42px;
+    }
+
     .pricingPlans {
         flex-direction: column;
     }
 
     .pricePlan {
         max-width: 100%;
+        margin: 0 0 7rem 0;
     }
+
+    .planTitle {
+        margin: 1rem 0 0 0;
+    }
+    
+    .planPrice {
+        margin: 1.5rem 0 3rem 0;
+    }
+
+    .pricePlan ul{
+        margin-left: 30%;
+    }
+
+    .pricePlan a {
+        margin: 0 0 0 -5.6rem;
+    }
+
+    /*  About Page */
+    .aboutTitle {
+        text-align: center;
+        margin: 0 4% 0 0;
+    }
+
+    .aboutTitle h1 {
+        font-size: 32px;
+        letter-spacing: -0.24px;
+        line-height: 36px;
+    }
+
+    .aboutText {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutText h2, h3, h4, h5 {
+        font-size: 24px;
+        margin: 2rem 0 -0.3rem 0;
+    }
+
+    #aboutImage1 {
+        display: none;
+    }
+
+    #aboutImage2 {
+        visibility: visible;
+        position: relative;
+        width: 100%;
+    }
+
+    .aboutStatsContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .aboutStats {
+        width: 100%;
+    }
+
+    .aboutStats hr {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .aboutStats #hrDisplay {
+        visibility: visible;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .aboutStats p:nth-child(3) {
+        margin: 1.5rem 0 2.5rem;
+    }
+
+    /*  Contact Page */
+    .contactTitle {
+        justify-content: flex-start;
+    }
+
+    .contactTitle h1 {
+        font-size: 32px;
+        line-height: 36px;
+        max-width: 40rem;
+    }
+
+    .contactFormContainer {
+        margin: 2rem 4%;
+        text-align: start;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    .contactForm button {
+        margin: 2rem 0 0 0;
+    }
+
+    .contactLogosContainer {
+        text-align: center;
+    }
+
 
 }
 
@@ -1045,5 +1242,14 @@ footer {
     .advantagesColumn {
         max-width: 100%;
         margin-bottom: 3rem;
+    }
+
+    .formLogos {
+        max-width: 20rem;
+        margin-left: 13%;
+    }
+
+    .formLogos object:nth-child(3) {
+        margin-top: 2.5rem;
     }
 }
